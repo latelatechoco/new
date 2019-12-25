@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FOOD</title>
+    <script src="./jquery-1.11.3.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/component.css" /> -->
+
+
+
+
+    <style>
+      *{
+        margin: 0 0;
+        padding: 0 0;
+      }
+      body{
+        background-image: url('./images/987.jfif');
+        overflow-x: hidden;
+        
+      }
+      a{
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+     li{
+        text-align: center;
+        margin-top: 20px;
+        list-style: none;
+        font-size: 1.5em;
+        
+        
+      }
+
+      /* #cir {
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            padding: 0 15%;
+         
+        } */
+
+        .pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-left: 25%;
+            
+        
+            /* animation: xuanzhuan 36s linear infinite; */
+        }
+
+        .sp{
+          padding: 0 14%;
+          text-decoration: none;
+         
+        }
+
+
+      .box {
+            width:100%;
+            margin: 0 auto;
+            /* overflow: hidden; */
+            background: white;
+        }
+
+        .left {
+            width:35%;
+            /* height: 3000px; */
+            /* background: #CCC; */
+            float:left;
+            /* position: fixed; */
+        }
+        .right {
+            width: 65%;
+            float: right; 
+            /* background: #abcdef; */
+            float: right;
+            /* height: 3000px; */
+            
+        }
+
+      
+      figure.effect-sadie figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 15px;
+	width: 50%;
+	/* height: 100%; */
+	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect-sadie h2 {
+  position: absolute;
+  font-family: '宋体';
+	top: 20%;
+	left: 25%;
+	width: 100%;
+	color: mintcream;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+  position: absolute;
+  font-size: 1.5em;
+  font-family: "宋体";
+  color:mintcream;
+	bottom: 10%;
+	left: 10%;
+	padding: 1em;
+	width: 60%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie:hover h2 {
+	color: #fff;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
+    </style>
+
+</head>
+<body >
+
+  <!-- <div class="wrap"> -->
+   
+
+      <!-- nav开始 -->
+      <div class="row" >
+        <div class="col-md-12">
+            <nav >
+                <div class="container-fluid">
+                 
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                      <li ><a href="#" id="wnav">HOME</a></li>
+                      <li><a href="#" id="wnav">城市一角</a></li>
+                      <li><a href="#" id="wnav">民优特色</a></li>
+                      <li><a href="#" id="wnav">风景名胜</a></li>
+                      <li><a href="#" id="wnav">历史文化</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#" id="wnav">登录</a></li>
+                      <li><a href="#" id="wnav">注册</a></li>
+                      </li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+          </div>
+        </div>     <!-- row -->
+        <!-- nav结束 -->
+        <img src="./images/2221.jpg" style=" margin-left: 174px;"  alt="">
+
+         <!-- container -->
+         <div style="background: mintcream; width: 1171px; margin-left: 174px;">
+          <a href="#mf" class="sp">嗦粉↓</a>
+          <a href="" class="sp">吃肉↓</a>
+          <a href="" class="sp">小吃↓</a>
+        </div>
+        <div class="container" style="background:url('./images/bg5.jpeg')">
+
+       
+          <div class="row" style="background: beige; ">
+           
+          
+            <div class="col-md-4" id="cir">
+              <a href="#mf"><img class="pic" src="./images/2.jfif"  alt=""></a>
+              
+              
+            </div>
+            
+            <div class="col-md-4" id="cir">
+              <a href=""><img class="pic" src="./images/77.jfif"  alt=""></a>
+              
+
+            </div>
+            <div class="col-md-4" id="cir">
+              
+              <a href=""><img class="pic" src="./images/c1.jpg"  alt=""></a>
+
+            </div>
+            
+          </div>
+          
+          <div class="row">
+           
+            <div class="col-md-6" id="mf">
+             <h1 class="animated rubberBand">无米粉</h1>
+             <ul>
+               <li>没有什么是一碗粉解决不了的</li>
+               <li>如果有@_@那……就来两碗！</li>
+               <li>嗦粉一时爽</li>
+               <li>一直嗦粉一直爽！</li>
+             </ul>
+             
+            </div>
+            
+            <div class="col-md-6">
+              <img src="./images/cf.jpg" style="width: 50%;" alt="">
+            </div>
+            
+          </div>
+          <!-- row -->
+          <div class="row">
+
+            <div class="col-md-6">
+              <img src="./images/cf.jpg" style="width: 50%; margin-left: 30%;" alt="">
+            </div>
+
+            <div class="col-md-6" id="mf">
+              <h1 class="animated rubberBand">不广西</h1>
+             <ul>
+               <li>老板，生料粉，猪肝瘦肉，菜多粉少</li>
+               <li>一碗榨粉，不要花生</li>
+               <li>二两猪脚，切粉</li>
+               <li>老友打包带走！</li>
+               <li></li>
+             </ul>
+             </div>
+
+          </div>
+          <!-- row -->
+          
+          <div class="row" style="margin-top: 5%;">
+            <div class="col-md-12">
+              <h2 style="text-align: center;">立即收获武鸣米粉图鉴</h2>
+            </div>
+          </div>
+
+          <div class="box" style="margin-top: 5%;">
+
+            <div class="left">
+
+              <div class="row" >
+                <div class="col-md-12">
+                  <figure class="effect-sadie">
+                    <img src="./images/zjf1.jpg" style="width:100%; " alt=""/>
+                    <figcaption>
+                      <h2>猪脚粉</h2>
+                      <p>炸的酥脆的猪脚浸泡在红油汤底里,弹牙入味，大口吃肉,真！的！太！爽！了！</p>
+                    </figcaption>			
+                  </figure>
+                </div>
+              </div>
+
+               
+                <div class="row">
+                  <div class="col-md-12" style="margin-top: 5%;">
+                    <figure class="effect-sadie">
+                      <img src="./images/f4.jpg" style="width:100%; " alt=""/>
+                      <figcaption>
+                        <h2>老友粉</h2>
+                        <p>说到粉，怎么少得了老友呢,酸笋与辣椒的组合,汤汁浓郁，酸辣开胃，约上好友，吃老友！</p>
+                      </figcaption>			
+                    </figure>
+                  </div>
+                </div>
+                <!-- row -->
+                  <!-- <div class="col-md-12">
+                    <img src="./food/f4.jpg" style="width: 100%;" alt="">
+                  </div> -->
+               
+                 
+                <!-- <div class="row">
+                  <div class="col-md-12">
+                    <img src="./food/zjf1.jpg" style="width: 100%; margin-top: 10px;" alt="">
+                  </div>
+                </div> -->
+                
+            </div><!-- left -->
+
+            <div class="right">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>顾名思义，生料粉就是自选材料啦</li>
+                    <li>猪肝瘦肉粉肠等等应有尽有</li>
+                    <li>早晨喝上一口热乎清甜的汤</li>
+                    <li>又是元气满满的一天呢！</li>
+                  </ul>
+                </div>
+                <div class="col-md-6" >
+                 <img src="./images/sl.jpg" style="width: 100%;" alt="">
+                </div>
+              </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="./images/jtf1.jpg" style="width: 100%; margin-left: 5%;" alt="">
+                  </div>
+                  <div class="col-md-6" >
+                    <ul>
+                      <li>卷筒粉简直就是早餐必吃榜榜首！！！</li>
+                      <li>口感软糯细腻，酱料酸甜开胃</li>
+                      <li>黄皮酱与卷筒粉锁死了 咔咔咔</li>
+                      <li>多种小菜 多久都不会腻！</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="row" style="margin: 10px 10px;">
+                  <div class="col-md-6">
+                    <ul>
+                      <li>生榨米粉，又香又臭的矛盾体本体</li>
+                      <li>坊间流传，吃榨粉，就是吃“馊味”才正宗!</li>
+                      <li>可煮汤可干捞可香炒，光是想想都美好</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6">
+                    <img src="./images/zf1.jpg" style="width: 100%;" alt="">
+                  </div>
+                  
+                </div>
+
+               
+     
+            </div> <!-- right -->
+            
+        </div><!-- box -->
+<!-- 
+          <div class="row">
+
+            <div class="col-md-4">
+              <figure class="effect-sadie">
+                <img src="./food/f1.jpg" style="width:100%; " alt=""/>
+                <figcaption>
+                  <h2>老友粉</h2>
+                  <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+                </figcaption>			
+              </figure>
+            </div> -->
+
+          <!-- </div> row  -->
+
+        </div> <!-- container -->
+
+<!-- </div> -->
+   <!-- wrap -->
+ 
+
+
+</body>
+</html>
